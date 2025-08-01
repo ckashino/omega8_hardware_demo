@@ -1,0 +1,3 @@
+[submodule "omega8"]
+	path = omega8
+	url = git@github.com:ckashino/omega8.git
