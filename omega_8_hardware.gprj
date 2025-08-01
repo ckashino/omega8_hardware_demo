@@ -1,0 +1,17 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5A-25B" pn="GW5A-LV25MG121NC1/I0">gw5a25b-003</Device>
+    <FileList>
+        <File path="omega8/design/alu.v" type="file.verilog" enable="1"/>
+        <File path="omega8/design/core.v" type="file.verilog" enable="1"/>
+        <File path="omega8/design/reg_file.v" type="file.verilog" enable="1"/>
+        <File path="omega8/examples/instr_mem.v" type="file.verilog" enable="1"/>
+        <File path="omega8/examples/ram.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/top.cst" type="file.cst" enable="1"/>
+        <File path="src/timing.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
