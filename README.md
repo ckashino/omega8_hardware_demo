@@ -5,3 +5,6 @@ functionality, an external logic analyzer was used which was directly connected 
 the output of the analyzer.
 
 <img width="1919" height="1136" alt="analyzed_signals" src="https://github.com/user-attachments/assets/3b0c69d0-7d41-4d9d-afe9-26cb17a440bb" />
+
+# Example Resource Utilization
+<img width="1231" height="495" alt="image" src="https://github.com/user-attachments/assets/9a01783b-bca9-4ffb-9a27-6016d317df01" />
