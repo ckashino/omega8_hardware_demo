@@ -18,21 +18,21 @@ module top (
 
   reg rst = 1'b1; // Initialize rst to 1'b1 so it's high at the very start
 
-// Counter to control the duration of the reset signal
-    reg [4:0] rst_counter = 5'b00000; 
-
-    // Logic to control the rst signal
-    always @(posedge clk) begin
-        if (rst_counter < 5'b11111) begin
-            rst <= 1'b1;
-            o_debug_data <= 8'h00;
-            rst_counter <= rst_counter + 1'b1;
-        end else begin
-            rst <= 1'b0;
-            o_debug_data[3:0] <= ram_data_read[3:0];
-            o_debug_data[4] <= ram_read;
-        end
-    end
+  // Counter to control the duration of the reset signal
+  reg [4:0] rst_counter = 5'b00000; 
+  
+  // Logic to control the rst signal
+  always @(posedge clk) begin
+      if (rst_counter < 5'b11111) begin
+          rst <= 1'b1;
+          o_debug_data <= 8'h00;
+          rst_counter <= rst_counter + 1'b1;
+      end else begin
+          rst <= 1'b0;
+          o_debug_data[3:0] <= ram_data_read[3:0];
+          o_debug_data[4] <= ram_read;
+      end
+  end
 
   core u_core (
     .i_clk(clk),
